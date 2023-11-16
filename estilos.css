@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+*{	margin-bottom: 0px;
+	border: 0px;
+	padding: 0px;
+}
+
+body{
+    background-color: rgba(152,0,0,1.00)
+}
+
+#contenedor{
+	margin: auto;
+		border: 3px;
+	height: auto;
+}
+#encabezado{
+    background-image: url(img/gucci.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-left: 450px;
+	margin-bottom: 30px;
+	
+	}
+#slide{
+margin-bottom: 30px;
+	height: 380px;
+}
+#botonera{
+    background-color: rgba(0,0,0,1.00);	
+	height: 40px;
+}
+
+#botonera ul{
+    width: 400px;
+    margin: auto;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-align: center;
+    
+}
+#botonera ul li{
+    list-style-type: none;
+    float: left;
+    line-height: 40px;
+    width: 98px;
+	text-align: center; }
+#botonera ul li a{
+ 
+     color: rgba(239,239,239,1.00);}
+#botonera ul li a:hover{
+	color: rgba(255,0,4,1.00);
+}
+#centro{
+	margin-top: 30px;
+	
+	height: 720px;
+		
+}
+#caja1{
+    height: 560px;
+    width: 750px;
+    float: left;
+    margin-left: 50px;
+    background-color: rgba(255,197,198,1.00);
+    margin-top: 20px;
+    text-align: justify;	
+		
+}
+#caja1 p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#caja2 p{
+	text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#caja2 h3 {
+    margin-left: 20px;
+    margin-bottom: -15px;	
+}
+
+#caja2{
+    height: 570px;
+    width: 415px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    background-color: rgba(195,255,191,1.00);
+  
+}
+#centro h1{
+	text-align: center;
+	margin-bottom: 20px;
+	line-height:80px
+		
+}
+#centro img{
+	
+	margin: auto;
+	
+}
+#pie{
+	height: 40px;
+	background-color:  rgba(151,149,141,1.00);
+
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.cajas{
+	float: left;
+	margin-left: 25px;
+	width: 30%;
+	height: 450px;
+	
+}
+.cajas p { 
+text-align: justify} 
+.cajas h3 {
+    background-color: rgba(152,0,0,1.00);
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;	
+}
+.cajas h4{
+	background-color: rgba(152,0,0,1.00);
+	text-align: center;
+}
+.carrete {
+	height: 200px;
+	
+}
+.carrete img{ 
+	float: left;
+	display: block;
+	padding-left: 70px;
+	
+}
+
+#centro1{ width: 1000px;
+height: 900px;
+margin: auto;
+border: none;
+	
+		
+}
+
+#tabs img{ margin-top: 30px;
+margin-left: 10px;
+}
+
+.textos{ 
+width: 600px;
+	height: 300px;
+	float:right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.textos p {
+    font-family: 'Croissant One', cursive;
+    font-weight: 200;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: justify;
+    color: rgba(255,255,255,1.00);
+	float: left;
+	
+	
+}
+#accordion  {margin-top: 40px;
+	margin-bottom: 40px;
+	
+}

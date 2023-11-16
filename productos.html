@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="jquery/jquery-ui.css" rel="stylesheet">	
+<link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="contenedor">
+	<div id="encabezado"></div><!--cierro encabezado-->
+	<div id="slide">
+	
+	
+<!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Composer -->
+    <!-- Source: https://www.jssor.com/demos/banner-slider.slider/=edit -->
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:800,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:800,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Orientation: 2,
+                $NoDrag: true
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1000;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .jssora061 {display:block;position:absolute;cursor:pointer;}
+        .jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+        .jssora061:hover {opacity:.8;}
+        .jssora061.jssora061dn {opacity:.5;}
+        .jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" /><img src="img/1.jpg" width="980" height="380" alt=""/>
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="img/1.jpg" />
+                <div u="thumb">Slide Description 001
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/2.jpg" />
+                <div u="thumb">Slide Description 002
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/3.jpg" />
+                <div u="thumb">Slide Description 003
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/4.jpg" />
+                <div u="thumb">Slide Description 004
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/5.jpg" />
+                <div u="thumb">Slide Description 005
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/044.jpg" />
+                <div u="thumb">Slide Description 006
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/050.jpg" />
+                <div u="thumb">Slide Description 007
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/049.jpg" />
+                <div u="thumb">Slide Description 008
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/052.jpg" />
+                <div u="thumb">Slide Description 009
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/051.jpg" />
+                <div u="thumb">Slide Description 010
+                </div>
+            </div>
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">image gallery</a>
+        <!-- Thumbnail Navigator -->
+        <div u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,.5);">
+            <div u="slides">
+                <div u="prototype" style="position:absolute;top:0;left:0;width:980px;height:50px;">
+                    <div u="thumbnailtemplate" style="position:absolute;top:0;left:0;width:100%;height:100%;font-family:arial,helvetica,verdana;font-weight:normal;line-height:50px;font-size:16px;padding-left:10px;box-sizing:border-box;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+	
+	</div>
+	
+  <div id="botonera">
+	<ul>
+	  <li> <a href="index.html">inicio</a></li>
+		<li> <a href="productos.html">productos</a></li>
+		<li> <a href="contacto.html">contacto</a></li>
+		<li> <a href="locales.html">locales</a></li>
+    </ul>
+	</div><!--cierro botonera-->
+	
+  <div id="centro"><!--abre centro-->
+	 
+	  <div id="centro1">
+	<!--abre fichas-->
+	<!-- Tabs -->
+<!--<h2 class="demoHeaders">Tabs</h2>-->
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Anteojos with</a></li>
+		<li><a href="#tabs-2">Cinturon wisavoyth</a></li>
+		<li><a href="#tabs-3">Bolso Gucci Savoy</a></li>
+	</ul>
+	<div id="tabs-1">
+		 <img src="img/imgucc.jpg" width="259" height="194" alt=""/>
+<div class="textos">
+  <p>Rindiendo homenaje a un material en el corazón de la herencia de Gucci, esta cartera con cremallera presenta un cierre de cremallera de bambú. Confeccionado en una lujosa piel verde esmeralda, el accesorio se completa con una pieza metálica con monograma de doble G en tono dorado.</p>
+			</div><!--cierra textos-->
+		
+	</div><!--cierra ficha 1-->
+	
+	<div id="tabs-2">
+			<img src="img/cintoguc.jpg" width="259" height="194" alt=""/>
+	 		 <div class="textos">
+			<p>Un diseño que juega con geometrías, destacando símbolos emblemáticos del archivo para darle un toque retro. El hardware G entrelazado en la solapa hace una declaración contra el tapizado de cuero tonal inspirado en la década de 1970</p>
+	 	 </div><!--cierra textos-->
+	</div><!--cierra ficha 2-->
+	
+	<div id="tabs-3">
+		<img src="img/bolso-gucci-1618993733.jpg" width="259" height="194" alt=""/>
+<div class="textos">
+		  <p>Este bolso de viaje está confeccionado con lona GG Supreme beige y ébano combinada con la combinación distintiva de la House Web con el hardware Double G. La forma de asa superior también está equipada con una correa de lona ajustable para que pueda llevarse al hombro.Vas a lucir un hermoso bolso de coleccion.</p> 
+			</div><!--cierra clase textos-->
+	</div><!--cierra ficha 3-->
+	
+</div><!--cierra fichas -->
+	  
+	  
+	
+  </div><!--cierro centro-->
+	
+			<!--abre acordeon-->
+	<!-- Accordion -->
+<!--<h2 class="demoHeaders">Accordion</h2>-->
+<div id="accordion">
+	<h3>vivienda ciudad</h3>
+	<div><img src="img/billetera.png" width="100" height="100" alt=""/>
+	 	 <div class="textos">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div><!--cierra textos--></div>
+		<!--cierra acordeon 1-->
+	
+	<h3>vivienda campo</h3>
+	<div><img src="img/logo.png" width="60" height="42" alt=""/>
+	 		 <div class="textos">
+			<p>Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</p>
+	 	 </div><!--cierra textos--></div>
+		<!--cierra acordeon 2-->
+	
+	<h3>departamentos</h3>
+	<div><img src="img/bolso.png" width="100" height="145" alt=""/>
+	 		 <div class="textos">
+			<p>Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</p> 
+			</div><!--cierra clase textos--></div>
+		<!--cierra acordeon 3-->
+	
+</div>
+			<!--cierra acordeon-->
+	</div><!--cierro centro-->
+	<script src="jquery/external/jquery/jquery.js"></script>
+<script src="jquery/jquery-ui.js"></script>
+<script>
+	$( "#tabs" ).tabs();
+	$( "#accordion" ).accordion();
+
+	</script>
+	
+  <div id="pie">MARTINA REPILA MARTIN</div><!--cierro pie-->
+
+</div><!--cierro contenedor-->
+</body>
+</html>
